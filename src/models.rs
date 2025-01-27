@@ -10,7 +10,7 @@ pub struct Todo {
     pub title: String,
     pub description: String,
     pub completed: bool,
-    pub created_at: String
+    pub created_at: String,
 }
 
 #[derive(Insertable, Serialize,, FromForm)]
@@ -18,10 +18,10 @@ pub struct Todo {
 pub struct NewTodo {
     pub title: String,
     pub description: String,
-    pub completed: bool
+    pub completed: bool,
 }
 
 #[derive(FromForm)]
 pub struct DeleteForm {
-    pub id: i32
+    pub id: i32,
 }
